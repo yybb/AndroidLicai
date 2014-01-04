@@ -14,7 +14,7 @@
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
         android:gravity="center"
-        android:text="今日财政情况"
+        android:text="今日财务状况"
         android:textSize="25dip" />
 
     <Button
