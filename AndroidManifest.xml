@@ -5,7 +5,7 @@
     android:versionName="1.0" >
 
     <uses-sdk
-        android:minSdkVersion="8"
+        android:minSdkVersion="11"
         android:targetSdkVersion="17" />
 
     <application
@@ -14,7 +14,7 @@
         android:label="@string/app_name"
         android:theme="@style/AppTheme" >
         <activity
-            android:name="com.licai.activity.IndexActivity"
+            android:name="com.licai.activity.LoginActivity"
             android:label="@string/app_name" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -22,10 +22,11 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        
+        <activity android:name="com.licai.activity.RegisterActivity"></activity>
         <activity android:name="com.licai.activity.PlanActivity"></activity>
         <activity android:name="com.licai.activity.ActualActivity"></activity>
         <activity android:name="com.licai.activity.HistoryActivity"></activity>
+        <activity android:name="com.licai.activity.IndexActivity"></activity>
     </application>
 
 </manifest>

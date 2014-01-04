@@ -25,10 +25,18 @@ public final class R {
         public static final int title_bg=0x7f020001;
     }
     public static final class id {
-        public static final int action_settings=0x7f08000d;
+        public static final int action_settings=0x7f08001a;
+        public static final int btlogin=0x7f080013;
+        public static final int btregister=0x7f080012;
+        public static final int btregister1=0x7f080019;
         public static final int button_index_actual=0x7f080003;
         public static final int button_index_history=0x7f080002;
         public static final int button_index_plan=0x7f080004;
+        public static final int edname=0x7f08000f;
+        public static final int edname1=0x7f080016;
+        public static final int edpassword=0x7f080011;
+        public static final int edpassword1=0x7f080018;
+        public static final int login=0x7f08000d;
         public static final int textView1=0x7f080000;
         public static final int text_index_actual=0x7f080007;
         public static final int text_index_actual_expense=0x7f08000b;
@@ -39,15 +47,23 @@ public final class R {
         public static final int text_index_plan_expense=0x7f080009;
         public static final int text_index_plan_income=0x7f08000a;
         public static final int text_index_title=0x7f080001;
+        public static final int txt1=0x7f080014;
+        public static final int txtname=0x7f08000e;
+        public static final int txtname1=0x7f080015;
+        public static final int txtpassword=0x7f080010;
+        public static final int txtpassword1=0x7f080017;
     }
     public static final class layout {
         public static final int activity_actual=0x7f030000;
         public static final int activity_history=0x7f030001;
         public static final int activity_index=0x7f030002;
-        public static final int activity_plan=0x7f030003;
+        public static final int activity_login=0x7f030003;
+        public static final int activity_plan=0x7f030004;
+        public static final int activity_register=0x7f030005;
     }
     public static final class menu {
         public static final int index=0x7f070000;
+        public static final int main=0x7f070001;
     }
     public static final class string {
         public static final int action_settings=0x7f050001;
