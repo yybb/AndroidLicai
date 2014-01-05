@@ -1,13 +1,222 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical" >
+    android:orientation="vertical" 
+    tools:context=".ActualActivity">
 
     <TextView
-        android:id="@+id/textView1"
+        android:id="@+id/fjtextView1"
         android:layout_width="204dp"
         android:layout_height="wrap_content"
         android:text="实际收支设定界面" />
 
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" 
+        android:layout_marginTop="18dp">
+
+        <TableRow
+            android:id="@+id/tableRow1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" 
+            >
+            <TextView
+            android:id="@+id/fjtextView2"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:text="收入" 
+            android:textSize="25dip"
+            android:gravity="center"/>
+            
+            <TextView
+            android:id="@+id/fjtextView3"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:text="支出" 
+            android:textSize="25dip"
+            android:gravity="center"/>
+            
+            <TextView
+            android:id="@+id/fjtextView4"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:text="时间" 
+            android:textSize="25dip"
+            android:gravity="center"/>
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" 
+            android:layout_marginTop="18dp">
+
+            <EditText
+                android:id="@+id/fjeditText1"
+                android:layout_width="160dp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="numberDecimal" >
+
+                <requestFocus />
+            </EditText>
+
+            <EditText
+                android:id="@+id/fjeditText2"
+                android:layout_width="160dp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="numberDecimal" />
+
+            <DatePicker
+                android:id="@+id/fjdatePicker1"
+                android:layout_width="160dp"
+                android:layout_height="25dp" />
+            
+        </TableRow>
+
+        
+
+        
+    </TableLayout>
+
+    <Button
+        android:id="@+id/fjbutton1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="400dp"
+        android:layout_marginTop="18dp"
+        android:text="提交" />
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" 
+        android:layout_marginTop="70dp">
+
+        <TableRow
+            android:id="@+id/tableRow3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+            
+            <TextView
+            android:id="@+id/fjtextView5"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:text="收入" 
+            android:textSize="25dip"
+            android:gravity="center"/>
+            
+            <TextView
+            android:id="@+id/fjtextView6"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:text="支出" 
+            android:textSize="25dip"
+            android:gravity="center"/>
+            
+            <TextView
+            android:id="@+id/fjtextView7"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:text="时间" 
+            android:textSize="25dip"
+            android:gravity="center"/>
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TextView
+            android:id="@+id/fjtextView8"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:text="" 
+            android:textSize="25dip"
+            android:gravity="center"/>
+            
+            <TextView
+            android:id="@+id/fjtextView9"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:text="" 
+            android:textSize="25dip"
+            android:gravity="center"/>
+            
+            <TextView
+            android:id="@+id/fjtextView10"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:text="" 
+            android:textSize="25dip"
+            android:gravity="center"/>
+            
+        </TableRow>
+        <TableRow
+            android:id="@+id/tableRow5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TextView
+            android:id="@+id/fjtextView11"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:text="" 
+            android:textSize="25dip"
+            android:gravity="center"/>
+            
+            <TextView
+            android:id="@+id/fjtextView12"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:text="" 
+            android:textSize="25dip"
+            android:gravity="center"/>
+            
+            <TextView
+            android:id="@+id/fjtextView13"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:text="" 
+            android:textSize="25dip"
+            android:gravity="center"/>
+            
+        </TableRow>
+        <TableRow
+            android:id="@+id/tableRow6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TextView
+            android:id="@+id/fjtextView14"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:text="" 
+            android:textSize="25dip"
+            android:gravity="center"/>
+            
+            <TextView
+            android:id="@+id/fjtextView15"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:text="" 
+            android:textSize="25dip"
+            android:gravity="center"/>
+            
+            <TextView
+            android:id="@+id/fjtextView16"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:text="" 
+            android:textSize="25dip"
+            android:gravity="center"/>
+            
+        </TableRow>
+
+        
+    </TableLayout>
+    
 </LinearLayout>

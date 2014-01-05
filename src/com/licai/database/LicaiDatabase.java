@@ -6,40 +6,40 @@ public class LicaiDatabase {
 	
 	private LicaiDatabase() {}
 	
-	//ÓÃ»§¼Æ»®ÊÕÖ§±í ±íÃû¼°¸÷×Ö¶ÎÃû
-	//Ö÷¼üÎª¡°_ID¡±×ÔÔö³¤
+	//ï¿½Ã»ï¿½ï¿½Æ»ï¿½ï¿½ï¿½Ö§ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ö¶ï¿½ï¿½ï¿½
+	//ï¿½ï¿½ï¿½ï¿½Îªï¿½ï¿½_IDï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 	public static final class Plan implements BaseColumns {
 
         private Plan() {}
         
-        //±íÃû
+        //ï¿½ï¿½ï¿½ï¿½
         public static final String TABLE_NAME = "table_plan";
         
         public static final String USER_ID = "user_id";
-        //¼Æ»®ÊÕÈë
+        //ï¿½Æ»ï¿½ï¿½ï¿½ï¿½ï¿½
         public static final String PLAN_INCOME = "plan_income";
-        //¼Æ»®Ö§³ö
+        //ï¿½Æ»ï¿½Ö§ï¿½ï¿½
         public static final String PLAN_EXPENSE = "plan_expense";
-        //¼Æ»®ÊÕÖ§ËùÊôÈÕÆÚ
+        //ï¿½Æ»ï¿½ï¿½ï¿½Ö§ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
         public static final String PLAN_DATE = "plan_date";
     }
     
     
     
-    //ÓÃ»§Êµ¼ÊÊÕÖ§±í ±íÃû¼°¸÷×Ö¶ÎÃû
-	//Ö÷¼üÎª¡°_ID¡±×ÔÔö³¤
+    //ï¿½Ã»ï¿½Êµï¿½ï¿½ï¿½ï¿½Ö§ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ö¶ï¿½ï¿½ï¿½
+	//ï¿½ï¿½ï¿½ï¿½Îªï¿½ï¿½_IDï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
     public static final class Actual implements BaseColumns {
 
         private Actual() {}
-        //±íÃû
+        //ï¿½ï¿½ï¿½ï¿½
         public static final String TABLE_NAME = "table_actual";
         
         public static final String USER_ID = "user_id";
-        //Êµ¼ÊÊÕÈë
+        //Êµï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
         public static final String ACTUAL_INCOME = "actual_income";
-        //Êµ¼ÊÖ§³ö
+        //Êµï¿½ï¿½Ö§ï¿½ï¿½
         public static final String ACTUAL_EXPENSE = "actual_expense";
-        //Êµ¼ÊÊÕÖ§ËùÊôÈÕÆÚ
+        //Êµï¿½ï¿½ï¿½ï¿½Ö§ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
         public static final String ACTUAL_DATE = "actual_date";
     }
 }
