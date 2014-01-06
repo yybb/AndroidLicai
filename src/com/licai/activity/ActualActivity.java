@@ -6,6 +6,7 @@ import java.util.List;
 
 
 import android.content.Context;
+import android.content.Intent;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
@@ -26,6 +27,9 @@ public class ActualActivity extends LicaiActivity {
 	private List<TextView> tx=new ArrayList<TextView>();
 	private DatePicker dt;
 	private Button b;
+	private Button b1;
+	private Button b2;
+	private Button b3;
 	public static SQLiteDatabase db;
 	List<tmpdata> getret;
 	private String tmpdata;
@@ -47,6 +51,9 @@ public class ActualActivity extends LicaiActivity {
 	    tx.add((TextView)findViewById(R.id.fjtextView15));
 	    tx.add((TextView)findViewById(R.id.fjtextView16));
 		b=(Button)findViewById(R.id.fjbutton1);
+		b1=(Button)findViewById(R.id.exbutton1);
+		b2=(Button)findViewById(R.id.exbutton2);
+		b3=(Button)findViewById(R.id.exbutton3);
 		db = openOrCreateDatabase("android_licai.db", Context.MODE_PRIVATE, null);
 		
 		Calendar calendar=Calendar.getInstance();
@@ -85,7 +92,32 @@ public class ActualActivity extends LicaiActivity {
 			}
 		});
 		
+		b1.setOnClickListener(new View.OnClickListener(){
+			@Override
+			public void onClick(View arg0) {
+				Intent intent = new Intent(ActualActivity.this, ActualActivity.class);
+//				intent.putExtra("userId", id);
+				startActivity(intent);
+		    }
+	    });
 		
+		b2.setOnClickListener(new View.OnClickListener(){
+			@Override
+			public void onClick(View arg0) {
+				Intent intent = new Intent(ActualActivity.this, PlanActivity.class);
+//				intent.putExtra("userId", id);
+				startActivity(intent);
+		    }
+	    });
+		
+		b3.setOnClickListener(new View.OnClickListener(){
+			@Override
+			public void onClick(View arg0) {
+				Intent intent = new Intent(ActualActivity.this, HistoryActivity.class);
+//				intent.putExtra("userId", id);
+				startActivity(intent);
+		    }
+	    });
 	}
 	
 	protected void insert(String tmp1,String tmp2,String tmp3){

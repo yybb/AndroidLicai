@@ -6,6 +6,30 @@
     android:orientation="vertical" 
     tools:context=".ActualActivity">
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <Button
+            android:id="@+id/exbutton1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="实际开销" />
+
+        <Button
+            android:id="@+id/exbutton2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="计划制定" />
+
+        <Button
+            android:id="@+id/exbutton3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="历史开销" />
+
+    </LinearLayout>
+
     <TextView
         android:id="@+id/fjtextView1"
         android:layout_width="204dp"
